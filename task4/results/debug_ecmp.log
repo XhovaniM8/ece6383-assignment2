@@ -1,0 +1,28 @@
+no_of_nodes 128
+FatTree topology input file: ../../topologies/topo_assignment2/fat_tree_128_1os.topo
+traffic matrix input file: ../../connection_matrices/cm_assignment2/incast_32to4.cm
+sender based algo dctcp
+Load balancing algorithm set to  ecmp
+queue_type 10
+Setting queuesize to 100 packets 
+no of paths 200
+cwnd 10
+endtime(us) 2000
+Usage ../../htsim_uec [-nodes N]
+	[-cwnd cwnd_size]
+	[-q queue_size]
+	[-queue_type composite|random|lossless|lossless_input|]
+	[-tm traffic_matrix_file]
+	[-strat route_strategy (single,rand,perm,pull,ecmp,
+	ecmp_host path_count,ecmp_ar,ecmp_rr,
+	ecmp_host_ar ar_thresh)]
+	[-log log_level]
+	[-seed random_seed]
+	[-end end_time_in_usec]
+	[-mtu MTU]
+	[-hop_latency x] per hop wire latency in us,default 1
+	[-target_q_delay x] target_queuing_delay in us, default is 6us 
+	[-switch_latency x] switching latency in us, default 0
+	[-host_queue_type  swift|prio|fair_prio]
+	[-logtime dt] sample time for sinklogger, etc
+	[-conn_reuse] enable connection reuse
